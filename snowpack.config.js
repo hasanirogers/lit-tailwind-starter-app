@@ -4,7 +4,12 @@ module.exports = {
     public: '/',
     src: '/_dist_',
   },
-  plugins: ['@snowpack/plugin-babel', '@snowpack/plugin-dotenv'],
+  plugins: [
+    '@snowpack/plugin-babel',
+    '@snowpack/plugin-dotenv',
+    '@snowpack/plugin-postcss',
+    '@snowpack/plugin-optimize',
+  ],
   install: [
     /* ... */
   ],
